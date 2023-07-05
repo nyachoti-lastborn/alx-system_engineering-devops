@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Files in current directory:" ls -la echo "Files in parent directory:" ls -la .. echo "Files in /boot directory:" ls -la /boot
+current_dir_files=$(ls -la) parent_dir_files=$(ls -la ..) boot_dir_files=$(ls -la /boot) echo "Files in current directory:" echo "$current_dir_files" echo "Files in parent directory:" echo "$parent_dir_files" echo "Files in /boot directory:" echo "$boot_dir_files"
